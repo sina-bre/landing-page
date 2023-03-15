@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 1</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo"> <span class="s1">D R</span> <span class="s2">A K</span> </a>
+            <nav>
+                <svg class="close" enable-background="new 0 0 256 256" id="Layer_1" version="1.1" viewBox="0 0 256 256" width="256px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M183.191,174.141c2.5,2.498,2.5,6.552,0,9.05c-1.249,1.25-2.889,1.875-4.525,1.875c-1.638,0-3.277-0.625-4.525-1.875  l-46.142-46.142L81.856,183.19c-1.249,1.25-2.888,1.875-4.525,1.875c-1.638,0-3.277-0.625-4.525-1.875c-2.5-2.498-2.5-6.552,0-9.05  l46.143-46.143L72.806,81.856c-2.5-2.499-2.5-6.552,0-9.05c2.497-2.5,6.553-2.5,9.05,0l46.142,46.142l46.142-46.142  c2.497-2.5,6.553-2.5,9.051,0c2.5,2.499,2.5,6.552,0,9.05l-46.143,46.142L183.191,174.141z M256,128C256,57.42,198.58,0,128,0  C57.42,0,0,57.42,0,128c0,70.58,57.42,128,128,128C198.58,256,256,198.58,256,128z M243.2,128c0,63.521-51.679,115.2-115.2,115.2  c-63.522,0-115.2-51.679-115.2-115.2C12.8,64.478,64.478,12.8,128,12.8C191.521,12.8,243.2,64.478,243.2,128z"/></svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Mood</a></li>
+                    <li><a href="#">Pictures</a></li>
+                </ul>
+                
+            </nav>
+
+            <svg class="hamburger-menu" id="Icons" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+            </style><circle class="st0" cx="16" cy="16" r="13"/><line class="st0" x1="10" x2="22" y1="16" y2="16"/><line class="st0" x1="10" x2="22" y1="20" y2="20"/><line class="st0" x1="10" x2="22" y1="12" y2="12"/></svg>
+        </header>
+        <section class="hero">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p class="first text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut facilis amet impedit dolor.</p>
+            <svg class="down-arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M22 12c0 5.514-4.486 10-10 10s-10-4.486-10-10 4.486-10 10-10 10 4.486 10 10zm-22 0c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm12-3l-4-2 4 11 4-11-4 2z"/></svg>
+        </section>
+
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lorem, ipsum dolor.</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis labore maxime facere ullam consequuntur exercitationem!</p>
+                </div>
+                <img  src="./pexels-ruvim-3378993.jpg" alt="">
+            </div>
+
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lorem, ipsum dolor.</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis labore maxime facere ullam consequuntur exercitationem!</p>
+                </div>
+                <img  src="./pexels-ian-beckley-2440079.jpg" alt="">
+            </div>
+        
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lorem, ipsum dolor.</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis labore maxime facere ullam consequuntur exercitationem!</p>
+                </div>
+                <img  src="./pexels-rakicevic-nenad-753994.jpg" alt="">
+            </div>
+        </section>
+    </div>
+    <script>
+        const menu = document.querySelector('.hamburger-menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+</html>
